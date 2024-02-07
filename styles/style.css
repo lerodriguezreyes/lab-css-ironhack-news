@@ -81,6 +81,12 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  
+}
+
+.menubutton {
+  visibility: hidden;
+  display: none;
 }
 
 .navbar li {
@@ -177,3 +183,138 @@ header {
 }
   
 /* Write your CSS below */
+
+
+
+/* Iteration 1 */
+@media (max-width: 759px)  {
+
+    .navbar  {
+      display: flex;
+      align-items: center;
+      flex-flow: column wrap;
+      justify-content: center;
+      border-right: none;
+      }
+
+    .navbar li {
+      width: 100%;
+      border-bottom: 1px solid #ffffff;
+      border-right: none
+    }
+   
+    .main-article  {
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      flex-flow: column wrap;
+      justify-content: center;
+      margin-bottom: 10px;
+      }
+    
+      .main-article .image {
+        width: 100%;
+        padding: 0 20px;
+        height: auto;
+      }
+      
+      .main-article .content {
+        width: 100%;
+        padding: 0 20px;
+        height: auto;
+      }
+
+    .articles-container {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+    
+      .article {
+        width: 100%;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+
+      .article img {
+        width: 100%;
+        height: auto;
+      }
+
+      .article h2 {
+      font-size: 20px;
+      
+      
+    }
+  }
+}
+
+/* Iteration 2 */
+
+@media (min-width: 760px) and  (max-width: 1024px)  {
+
+  .navbar  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: none;
+    }
+
+  .navbar li {
+    width: 100%;
+    border: 1px solid #ffffff;
+  }
+ 
+  .main-article  {
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    }
+  
+    .main-article .image {
+      width: 100%;
+      padding: 0 20px;
+      height: auto;
+    }
+    
+    .main-article .content {
+      width: 100%;
+      padding: 0 20px;
+      height: auto;
+    }
+
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-evenly;
+  
+    .article {
+      width: 45%;
+      border: 1px solid #ccc;
+      margin-bottom: 30px;
+    }
+
+    .article img {
+      width: 100%;
+      height: auto;
+    }
+
+    .article h2 {
+    font-size: 20px;
+    
+    
+  }
+  /*Iteration 3 */
+  @media(max-width: 499x){
+    .navbar .menubutton{
+      visibility: visible;
+      display:flex
+    }
+     .navbar .li {
+      visibility: hidden;
+      display: none;
+    }
+  }
+}
+}
